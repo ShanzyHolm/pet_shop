@@ -65,10 +65,10 @@ def customer_pet_count(pet)
   return pet[:pets].count
 end
 
-# def add_pet_to_customer(customer, new_pet)
-#   customer[:pets] << new_pet
-#   return customer
-# end
+def add_pet_to_customer(customer, new_pet)
+  customer[:pets] << new_pet
+  return customer
+end
 
 # OPTIONAL
 
