@@ -42,6 +42,10 @@ def find_pet_by_name(pets_array, name)
   return nil
 end
 
+def remove_pet_by_name(pets_array, name)
+  return find_pet_by_name = pets_array[:pets].delete_if {|k| "#{k[:name]}"}
+end
+
 # def remove_pet_by_name()
 #   return find_pet_by_name.delete()
 # end
@@ -51,8 +55,9 @@ end
 #   end
 #   return nil
 # end
-# def remove_pet_by_name(pets_array)
-#   return pets_array[:pets].delete[:name] == name
+# def remove_pet_by_name(pets_array, name)
+#   pets_array[:pets].delete("name")
+#   return nil
 # end
 
 def add_pet_to_stock(stock, pet)
@@ -84,3 +89,7 @@ def customer_can_afford_pet(customer, pet)
   end
   return false
 end
+
+# def sell_pet_to_customer(customer, pet)
+#
+# end
