@@ -20,14 +20,12 @@ def increase_pets_sold(sold, amount)
 end
 
 def stock_count(pets_array)
-  for pet in pets_array
     return pets_array[:pets].count
-  end
 end
 
 # def all_pets_by_breed(pets_by_breed)
-#   pets_by_breed = []
-#   return pets_by_breed[:pets][:breed]
+#   for breed in
+#   return pets_by_breed[:pets][:breed].count
 # end
 
 # def find_pet_by_name(pet)
