@@ -42,11 +42,17 @@ def find_pet_by_name(pets_array, name)
   return nil
 end
 
+# def remove_pet_by_name()
+#   return find_pet_by_name.delete()
+# end
 # def remove_pet_by_name(pets_array, name)
 #   for pet in pets_array[:pets]
 #     return pet[:name].delete(name) == name
 #   end
 #   return nil
+# end
+# def remove_pet_by_name(pets_array)
+#   return pets_array[:pets].delete[:name] == name
 # end
 
 def add_pet_to_stock(stock, pet)
@@ -72,6 +78,9 @@ end
 
 # OPTIONAL
 
-def method_name()
-
+def customer_can_afford_pet(customer, pet)
+  if customer[:cash] >= pet[:price]
+    return true
+  end
+  return false
 end
