@@ -20,18 +20,35 @@ def increase_pets_sold(sold, amount)
 end
 
 def stock_count(pets_array)
-    return pets_array[:pets].count
+  return pets_array[:pets].count
 end
 
-# def all_pets_by_breed(pets_by_breed)
-#   for breed in
-#   return pets_by_breed[:pets][:breed].count
+# def pets_by_breed(pets_array, breed)
+#   pets = []
+#   return pets_array[:pets].include?("breed")
+#
+#   # for pet in pets_array
+#   #   if pet[:pets].include?(breed)
+#   #     return "t"
+#   #   end
+#   # end
+#   # return "not found"
 # end
 
-# def find_pet_by_name(pet)
-#   if pet.include?["name"]
-#     return ""
-#   else
-#     return
+def find_pet_by_name(pets_array, name)
+  for pet in pets_array[:pets]
+    if pet[:name] == name
+      return pet
+    end
+  end
+  return nil
+end
+
+# def remove_pet_by_name(pets_array, name)
+#   for pet in pets_array
+#     if pet[:pets] == name
+#       return pet
+#     end
 #   end
+#   return
 # end
