@@ -65,3 +65,13 @@ def customer_pet_count(pet)
   pet = 0
   return pet
 end
+
+def add_pet_to_customer(customer, pet)
+  return customer[:pets] << pet
+end
+
+# OPTIONAL
+
+def method_name()
+
+end
