@@ -23,27 +23,9 @@ def stock_count(pets_array)
   return pets_array[:pets].count
 end
 
-# def pets_by_breed(pets, breed)
-#   return pets[:pets][:breed] == breed
-# end
-
-# for pet in pets[:pets]
-#     if pet[:breed].find()
-#       return pet
-#     else
-#       return
-#     end
-#   end
-# end
-
-  # for pet in pets_array[:pets]
-  #   if pet[:breed] == breed
-  #     return pet
-  #   else
-  #     return pet
-  #   end
-  # end
-# end
+def pets_by_breed(pets, breed)
+  return pets[:pets].select {|pet| pet[:breed]== breed}
+end
 
 def find_pet_by_name(pets_array, name)
   for pet in pets_array[:pets]
@@ -57,20 +39,6 @@ end
 def remove_pet_by_name(pets_array, name)
   return find_pet_by_name = pets_array[:pets].delete_if {|k| "#{k[:name]}"}
 end
-
-# def remove_pet_by_name()
-#   return find_pet_by_name.delete()
-# end
-# def remove_pet_by_name(pets_array, name)
-#   for pet in pets_array[:pets]
-#     return pet[:name].delete(name) == name
-#   end
-#   return nil
-# end
-# def remove_pet_by_name(pets_array, name)
-#   pets_array[:pets].delete("name")
-#   return nil
-# end
 
 def add_pet_to_stock(stock, pet)
   stock[:pets] << pet
@@ -106,4 +74,44 @@ end
 #   if
 #   elsif
 #   end
+# end
+
+
+# =====================================================
+# Code attempts that did not work
+
+# def remove_pet_by_name()
+#   return find_pet_by_name.delete()
+# end
+# def remove_pet_by_name(pets_array, name)
+#   for pet in pets_array[:pets]
+#     return pet[:name].delete(name) == name
+#   end
+#   return nil
+# end
+# def remove_pet_by_name(pets_array, name)
+#   pets_array[:pets].delete("name")
+#   return nil
+# end
+
+# def pets_by_breed(pets, breed)
+#   return pets[:pets][:breed] == breed
+# end
+
+# for pet in pets[:pets]
+#     if pet[:breed].find()
+#       return pet
+#     else
+#       return
+#     end
+#   end
+# end
+
+  # for pet in pets_array[:pets]
+  #   if pet[:breed] == breed
+  #     return pet
+  #   else
+  #     return pet
+  #   end
+  # end
 # end
