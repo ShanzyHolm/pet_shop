@@ -24,13 +24,25 @@ def stock_count(pets_array)
 end
 
 # def pets_by_breed(pets, breed)
-#   for pet in pets[:pets]
-#     if pet[:breed] == breed
-#       return pets
+#   return pets[:pets][:breed] == breed
+# end
+
+# for pet in pets[:pets]
+#     if pet[:breed].find()
+#       return pet
 #     else
-#       return "not found"
+#       return
 #     end
 #   end
+# end
+
+  # for pet in pets_array[:pets]
+  #   if pet[:breed] == breed
+  #     return pet
+  #   else
+  #     return pet
+  #   end
+  # end
 # end
 
 def find_pet_by_name(pets_array, name)
@@ -91,5 +103,7 @@ def customer_can_afford_pet(customer, pet)
 end
 
 # def sell_pet_to_customer(customer, pet)
-#
+#   if
+#   elsif
+#   end
 # end
